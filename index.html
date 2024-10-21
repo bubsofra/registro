@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .candidatos {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .candidato {
+            text-align: center;
+        }
+        .candidato img {
+            max-width: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Votación</h1>
+    <form id="votingForm" onsubmit="return handleVote()">
+        <div class="candidatos">
+            <div class="candidato">
+                <input type="radio" id="opcion1" name="candidato" value="Candidato 1" required>
+                <label for="opcion1">
+                    <img src="C:\Documentos\votaciones\mr kitty.jpg" alt="Candidato 1">
+                    Candidato 1
+                </label>
+            </div>
+            <div class="candidato">
+                <input type="radio" id="opcion2" name="candidato" value="Candidato 2" required>
+                <label for="opcion2">
+                    <img src="C:\Documentos\votaciones\𝐡𝐞 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐠𝐞𝐭 𝐭𝐡𝐞 𝐣𝐨𝐛.jpg" alt="Candidato 2">
+                    Candidato 2
+                </label>
+            </div>
+            <div class="candidato">
+                <input type="radio" id="opcion3" name="candidato" value="Candidato 3" required>
+                <label for="opcion3">
+                    <img src="C:\Documentos\votaciones\_spooky_ cat memes 👽.jpg" alt="Candidato 3">
+                    Candidato 3
+                </label>
+            </div>
+        </div>
+        <input type="submit" value="Votar">
+    </form>
+
+    <script>
+        function handleVote() {
+            alert('Gracias por votar!');
+            window.location.href = 'file:///C:/Documentos/gracias/indez.html'; // Redirige a la página de agradecimiento
+            return false; // Previene el envío del formulario
+        }
+    </script>
+</body>
+</html>
+
+
